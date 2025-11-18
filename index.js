@@ -23,5 +23,4 @@ inquirer
     if (error.isTtyError) {
     } else {
     }
-  });
-
+    });
