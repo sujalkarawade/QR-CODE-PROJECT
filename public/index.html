@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>QR Code Generator</h1>
+    <p>Generate a QR code for any URL</p>
+
+    <form action="/generate" method="POST">
+      <input 
+        type="text" 
+        name="url" 
+        placeholder="Enter URL" 
+        required
+      />
+      <button type="submit">Generate QR</button>
+    </form>
+
+    <!-- QR image will appear here (if backend sends it) -->
+    <!--
+    <div class="qr-img">
+      <img src="your-qr-image.png" alt="QR Code">
+    </div>
+    -->
+  </div>
+
+</body>
+</html>

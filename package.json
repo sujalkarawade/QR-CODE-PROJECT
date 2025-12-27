@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "express": "^5.2.1",
     "fs": "^0.0.1-security",
     "inquirer": "^9.3.8",
+    "open": "^11.0.0",
     "qr-image": "^3.2.0"
   },
   "name": "2.4-qr-code-project",
@@ -14,6 +16,5 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {},
   "keywords": []
 }
