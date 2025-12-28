@@ -29,10 +29,30 @@ app.post("/generate", (req, res) => {
   });
 
   res.send(`
-    <h2>QR Code Generated</h2>
-    <img src="/qr_img.png" />
-    <br><br>
-    <a href="/">Generate Another</a>
+    <!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>QR Code Generated</title>
+      <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+      <div class="container">
+        <h1>QR Code Generated</h1>
+        <p class="muted">Your QR code for the provided URL is ready.</p>
+
+        <div class="qr-img">
+          <img src="/qr_img.png" alt="QR Code" />
+        </div>
+
+        <div class="actions">
+          <a class="btn" href="/qr_img.png" download="qr_code.png">Download</a>
+          <a class="btn ghost" href="/">Generate Another</a>
+        </div>
+      </div>
+    </body>
+    </html>
   `);
 });
 
